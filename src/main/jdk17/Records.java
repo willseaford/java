@@ -1,4 +1,6 @@
-package jdk17;
+public record Record(String name, String addressLine1, String postcode) {}
 
-public class Records {
+void main() {
+    Record record = new Record("Will", "123 Main Street", "AB123CD");
+    System.out.println(record);
 }
